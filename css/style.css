@@ -1,0 +1,166 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background: #F9F9F9;
+  color: #FFF;
+  font-family: cursive; 
+}
+
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+h1{
+  background: black;
+  margin-top: 1em;
+}
+
+ol{
+  display: block;
+  font-size: 3.5vh;
+  height: 37vh;
+  margin-bottom: 5vh;
+  overflow: auto; 
+  text-align: center;
+  width: 100%;
+}
+
+.mosquito {
+    margin: 50px auto 50px auto;
+}
+
+.rate-and-share-container {
+    width: 100%;
+    position: fixed;
+    bottom: 70px;
+    left: 0;
+}
+
+.rate-and-share-wrapper {
+    width: 90%;
+    max-width: 300px;
+    height: 40px;
+    line-height: 28px;
+    color: #555555;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 5px;	
+}
+
+.rate-button {
+    display: inline-block;
+    float: left;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 0 5px;
+    cursor: pointer;
+    margin-left: 1%;
+    text-decoration: none;
+    outline: none;
+}
+
+.rate-button:hover {
+    background-color: #EEE;
+}
+
+.rate-button span.star {
+
+}
+
+.rate-button span.star img {
+    width: 12px;
+    display: inline-block;
+    height: 11px;
+    margin-top: 10px;
+}
+
+.rate-button span.rate-text {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    padding-top: 1px;
+    color: #555555;
+}
+
+.button-wrapper {
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+}
+
+.button {
+    width: 90%;
+    max-width: 300px;
+    height: 40px;
+    padding-top: 10px;
+    line-height: 30px;
+    color: white;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.buttonitem {
+    width: 18%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    text-align: center;
+    background-color: #555;
+    border-radius: 5px;
+    font-size: 13px;
+    box-shadow: 3px 5px 3px #AAA;
+    cursor: pointer;
+}
+
+.buttonitem.active {
+    box-shadow: inset 0 0 10px #444;
+    background-color: #666;
+}
+
+.buttonspace {
+    width: 18%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    text-align: center;
+	color: white;
+}
+
+/* movimiento de imagen */
+.fuzz {
+    animation:fuzz 0.1s linear 0s infinite ;
+    -moz-animation: fuzz 0.1s linear 0s infinite ; /* Firefox */
+    -webkit-animation: fuzz 0.1s linear 0s infinite ; /* Safari y Chrome */
+    -o-animation: fuzz 0.1s linear 0s infinite ; /* Opera */
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden; /* Chrome y Safari */
+    -moz-backface-visibility:hidden; /* Firefox */
+    -ms-backface-visibility:hidden; /* Internet Explorer */
+}
+
+@keyframes fuzz {
+    0%   {transform: rotate(5deg) translate3d( 0px,0,0);}
+    25%  {transform: rotate(-5deg) translate3d( -5px,0,0);}
+    50%  {transform: rotate(0deg) translate3d( 0px,0,0);}
+    75%  {transform: rotate(5deg) translate3d( 5px,0,0);}
+    100% {transform: rotate(0deg) translate3d( 0px,0,0);}
+}
+
+@-moz-keyframes fuzz /* Firefox */ {
+    0%   {-moz-transform: rotate(5deg) translate3d( 0px,0,0);}
+    25%  {-moz-transform: rotate(-5deg) translate3d( -5px,0,0);}
+    50%  {-moz-transform: rotate(0deg) translate3d( 0px,0,0);}
+    75%  {-moz-transform: rotate(5deg) translate3d( 5px,0,0);}
+    100% {-moz-transform: rotate(0deg) translate3d( 0px,0,0);}
+}
