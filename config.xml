@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+	id          = "app.anti-mosquito.example"
+	versionCode = "10"
+	version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+	<icon src="default.ico" /
+
+	<name>Anti-mosquito</name>
+
+	<description>
+      ************* No más picaduras de mosquitos ************* 
+	  La aplicación Anti-mosquito emite un sonido de alta frecuencia (ultrasonido) que la mayoráa de mosquitos encuentran de mal gusto y le impide ser mordido por los mosquitos. Esta aplicación puede ayudar a prevenir las picaduras de mosquitos. Anti Mosquito es una de las formas de combatir los mosquitos. Efectivamente, complementa los métodos tradicionales de un spray o aleteo de manos, para evitar las picaduras. Simple de instalar y ejecutar nuestra app Anti Mosquito mantiene a los mosquitos lejos de usted y su Smartphone. Seleccione una frecuencia más alta para un mejor rendimiento y ajuste el volumen a alto. Por favor, no conecte los auriculares al utilizar esta aplicación. El mosquito hembra trae comida para sus huevos en desarrollo mediante la inserción de su probíscide en un mamífero o reptil y la extracción de su sangre. Sólo las hembras de los mosquitos pican a los humanos y animales.
+	  ** Nota: 
+	  - Esto es sólo una broma en su Smartphone. 
+	  - La aplicación no garantiza el 100% de eficacia en repeler los mosquitos porque hay muchas especies diferentes. Es simplemente una medida adicional contra los mosquitos. Recomendamos que use mosquiteras durante el sueño y cremas anti-mosquitos cuando esté en exteriores. 
+	  - Puede personalizar la frecuencia de acuerdo a sus deseos, pero si la frecuencia es demasiado baja, puede resultar incómoda para sus oídos. 
+	  - Se recomiendan las frecuencias de 20 kHz - 22 kHz, el oído humano no las escucha, y son eficaces contra los mosquitos. 
+	  - Y no olvide encender los altavoces a volumen Alto para abarcar un área mayor.
+	</description>
+
+	<author href="https://aquiesta.org" email="juanhdez@gmail.com">
+      J. Juan Hernández
+	</author>
+
+<!-- Customize your app and platform with the preference element. -->
+	<!-- all platforms -->
+	<preference name="phonegap-version" value="cli-6.5.0" />
+	<preference name="orientation" value="portrait" /> <!-- default, landscape, or portrait. -->
+	<preference name="fullscreen" value="true" />
+	
+	<!-- iOS only -->
+	<preference name="target-device" value="universal" /> <!-- handset, tablet, or universal. -->
+	<preference name="prerendered-icon" value="true" />
+	<preference name="detect-data-types" value="true" />
+	<preference name="exit-on-suspend" value="true" />
+	<preference name="deployment-target" value="7.0" />
+
+	<!-- Android only -->
+	<preference name="android-build-tool" value="ant|gradle" />
+	<preference name="android-minSdkVersion" value="14" />
+	<preference name="android-maxSdkVersion" value="19" />
+	<preference name="android-targetSdkVersion" value="12" />
+	<preference name="android-installLocation" value="auto" />
+	<preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+	
+	<!-- Windows only -->
+	<preference name="windows-arch" value="anycpu" /> <!-- anycpu, arm, x86, and x64. -->
+	<preference name="windows-appx-target" value="uap" /> <!-- uap (Windows 10 Mobile / Universal), 8.1-phone, 8.1-win -->
+	
+</widget>
