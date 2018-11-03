@@ -1,7 +1,6 @@
-# anti-mosquito
-* No más picaduras de mosquitos *
-
-La aplicación emite un sonido de alta frecuencia (ultrasonido) que la mayoría de mosquitos encuentran de mal gusto y le puede ayudar a prevenir las picaduras de mosquitos.
+## anti-mosquito
+* No más picaduras de mosquitos 
+* La aplicación emite un sonido de alta frecuencia (ultrasonido) que la mayoría de mosquitos encuentran de mal gusto y le puede ayudar a prevenir las picaduras de mosquitos.
 
 * Nota:
 
