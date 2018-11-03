@@ -1,51 +1,124 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-html{
+html {
   height: 100%;
   width: 100%;
 }
 
-body{
+body {
   background: #F9F9F9;
   color: #FFF;
-  font-family: cursive; 
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
   color: #FFF;
 }
 
-h1{
-  background: black;
-  margin-top: 1em;
+h1 {
+  background: #000000; /* black */
+  text-align: center;
+  /*margin-top: 1em;  */
 }
 
-ol{
+ol {
   display: block;
   font-size: 3.5vh;
   height: 37vh;
   margin-bottom: 5vh;
   overflow: auto; 
   text-align: center;
-  width: 100%;
 }
 
-.mosquito {
+.close {
+  float: *right;
+  margin-right: 1vw;
+  margin-top: 0.5vh;
+}
+
+.logo {
+  float: left;
+  height: 7vh;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+
+.menu {
+  background: black;
+  display: block;
+  height: 8vh;
+  line-height: 8vh;
+  float: center;
+}
+
+.container  {
+    width: 100%;
+}
+
+.app-title  {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 32px;
+}
+
+.mosquito  {
+    width: 215px; /*215px;*/
+	height: 150px;
     margin: 50px auto 50px auto;
 }
 
-.rate-and-share-container {
-    width: 100%;
-    position: fixed;
-    bottom: 70px;
-    left: 0;
+.mosquito img  {
+    width: 183px; /*183px;*/
+	height: 150px;
 }
 
-.rate-and-share-wrapper {
+
+/* image shake */
+.fuzz  {
+    animation:fuzz 0.1s linear 0s infinite;
+    -webkit-animation: fuzz 0.1s linear 0s infinite; /* Chrome and Safari */
+    -moz-animation: fuzz 0.1s linear 0s infinite; /* Firefox */
+    -o-animation: fuzz 0.1s linear 0s infinite; /* Opera */
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden; /* Chrome and Safari */
+    -moz-backface-visibility:hidden; /* Firefox */
+    -ms-backface-visibility:hidden; /* Internet Explorer */
+}
+
+@keyframes fuzz  {
+    0%   {transform: rotate(5deg) translate3d( 0px,0,0);}
+    25%  {transform: rotate(-5deg) translate3d( -5px,0,0);}
+    50%  {transform: rotate(0deg) translate3d( 0px,0,0);}
+    75%  {transform: rotate(5deg) translate3d( 5px,0,0);}
+    100% {transform: rotate(0deg) translate3d( 0px,0,0);}
+}
+
+@-moz-keyframes fuzz /* Firefox */  {
+    0%   {-moz-transform: rotate(5deg) translate3d( 0px,0,0);}
+    25%  {-moz-transform: rotate(-5deg) translate3d( -5px,0,0);}
+    50%  {-moz-transform: rotate(0deg) translate3d( 0px,0,0);}
+    75%  {-moz-transform: rotate(5deg) translate3d( 5px,0,0);}
+    100% {-moz-transform: rotate(0deg) translate3d( 0px,0,0);}
+}
+
+/* ./image shake */
+
+.rate-and-share-container  {
+    width: 100%;
+    /*position: fixed;*/
+    bottom: 70px;
+    left: 0;
+	padding-top: 260px;
+}
+
+.rate-and-share-wrapper  {
     width: 90%;
     max-width: 300px;
     height: 40px;
@@ -54,10 +127,10 @@ ol{
     overflow: hidden;
     margin: 0 auto;
     position: relative;
-    padding-top: 5px;	
+    padding-top: 5px;
 }
 
-.rate-button {
+.rate-button  {
     display: inline-block;
     float: left;
     border: 1px solid #CCCCCC;
@@ -69,22 +142,22 @@ ol{
     outline: none;
 }
 
-.rate-button:hover {
+.rate-button:hover  {
     background-color: #EEE;
 }
 
-.rate-button span.star {
+.rate-button span.star  {
 
 }
 
-.rate-button span.star img {
+.rate-button span.star img  {
     width: 12px;
     display: inline-block;
     height: 11px;
     margin-top: 10px;
 }
 
-.rate-button span.rate-text {
+.rate-button span.rate-text  {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
@@ -92,25 +165,121 @@ ol{
     color: #555555;
 }
 
-.button-wrapper {
+.share-button  {
+    display: inline-block;
+    float: right;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 74px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 1%;
+    overflow: hidden;
+}
+
+.share-button:hover  {
+    background-color: #EEE;
+}
+
+.share-button-inner  {
+    width: 74px;
+}
+
+.share-button span.share-logo  {
+    display: inline-block;
+    padding-top: 1px;
+}
+
+.share-button span.share-logo img  {
+    height: 10px;
+    width: 10px;
+}
+
+.share-button span.share-text  {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1px;
+}
+
+.share-icons  {
+    position: absolute;
+    right: -195px;
+    width: 130px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding-top: 2px;
+    height: 28px;
+    padding-left: 6px;
+    top: 5px;
+    background: #ffffff;
+}
+
+.share-label  {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.share-label img  {
+    height: 16px;
+    width: 16px;
+    margin-top: 7px;
+}
+
+.share-icon  {
+    background: #999;
+    border-radius: 5px;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+.share-icon img  {
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+}
+
+.share-close-button  {
+    display: inline-block;
+    float: right;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 54px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 1%;
+    height: 24px;
+    line-height: 24px;
+}
+
+.share-close-button:hover  {
+    background: #EEEEEE;
+}
+
+.button-wrapper  {
     width: 100%;
     position: fixed;
     bottom: 30px;
     left: 0;
 }
 
-.button {
+.button  {
     width: 90%;
     max-width: 300px;
     height: 40px;
-    padding-top: 10px;
+    padding-top: 150px;
     line-height: 30px;
     color: white;
     overflow: hidden;
     margin: 0 auto;
 }
 
-.buttonitem {
+.buttonitem  {
     width: 18%;
     margin-left: 1%;
     margin-right: 1%;
@@ -123,12 +292,12 @@ ol{
     cursor: pointer;
 }
 
-.buttonitem.active {
+.buttonitem.active  {
     box-shadow: inset 0 0 10px #444;
     background-color: #666;
 }
 
-.buttonspace {
+.buttonspace  {
     width: 18%;
     margin-left: 1%;
     margin-right: 1%;
@@ -137,30 +306,17 @@ ol{
 	color: white;
 }
 
-/* movimiento de imagen */
-.fuzz {
-    animation:fuzz 0.1s linear 0s infinite ;
-    -moz-animation: fuzz 0.1s linear 0s infinite ; /* Firefox */
-    -webkit-animation: fuzz 0.1s linear 0s infinite ; /* Safari y Chrome */
-    -o-animation: fuzz 0.1s linear 0s infinite ; /* Opera */
-    backface-visibility:hidden;
-    -webkit-backface-visibility:hidden; /* Chrome y Safari */
-    -moz-backface-visibility:hidden; /* Firefox */
-    -ms-backface-visibility:hidden; /* Internet Explorer */
-}
+/* STYLES */
+#spam {display:none;}
 
-@keyframes fuzz {
-    0%   {transform: rotate(5deg) translate3d( 0px,0,0);}
-    25%  {transform: rotate(-5deg) translate3d( -5px,0,0);}
-    50%  {transform: rotate(0deg) translate3d( 0px,0,0);}
-    75%  {transform: rotate(5deg) translate3d( 5px,0,0);}
-    100% {transform: rotate(0deg) translate3d( 0px,0,0);}
-}
-
-@-moz-keyframes fuzz /* Firefox */ {
-    0%   {-moz-transform: rotate(5deg) translate3d( 0px,0,0);}
-    25%  {-moz-transform: rotate(-5deg) translate3d( -5px,0,0);}
-    50%  {-moz-transform: rotate(0deg) translate3d( 0px,0,0);}
-    75%  {-moz-transform: rotate(5deg) translate3d( 5px,0,0);}
-    100% {-moz-transform: rotate(0deg) translate3d( 0px,0,0);}
+.contact_form h2  {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-radius: 5px;
+    color: #5CD053;
+    display: block;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    text-shadow: 1px 1px 1px #CCCCCC;
+    width: 433px;
 }
