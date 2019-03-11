@@ -26,7 +26,7 @@ function stop_audios() { //Detiene el audio y elimina las clases de los botones 
     for(i=1; i<=5; i++) {
         audioFiles[i].pause();
         $('.button_' + i).removeClass('active');
-        $('.mosquito img').attr('src', 'img/mosquito.jpg');
+        $('.mosquito img').attr('src', 'img/mosquito.png');
     }
 }
 
@@ -52,11 +52,16 @@ function button_action(index) {
 function mosquito_image_action() {
     if(is_now_playing()) {
         stop_audios();
-        $('.mosquito img').attr('src', 'img/mosquito.jpg');
+        $('.mosquito img').attr('src', 'img/mosquito.png');
     } else {
         play_an_audio(3);
         $('.mosquito img').attr('src', 'img/mosquito_animated.gif');
     }
+}
+
+function cerrar() {
+	self.close(opener = null);
+	window.close();
 }
 
 $(document).ready(function(){
