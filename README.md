@@ -5,8 +5,6 @@
 
 * Nota:
 
-	La aplicación no garantiza el 100% de eficacia en repeler los mosquitos porque hay muchas especies diferentes.
-    
-	No olvide encender los altavoces a volumen alto para abarcar un área mayor.
-    
+    La aplicación no garantiza el 100% de eficacia en repeler los mosquitos porque hay muchas especies diferentes.
+    No olvide encender los altavoces a volumen alto para abarcar un área mayor.
 	Esto es sólo una broma en su smartphone.
