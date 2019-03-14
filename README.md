@@ -1,5 +1,13 @@
 ## anti-mosquito
 
+<img src=https://build.phonegap.com/apps/3359384/badge/3564442821/version.svg />
+
+<img src=https://build.phonegap.com/apps/3359384/badge/3564442821.svg />
+
+<img src=https://build.phonegap.com/apps/3359384/badge/3564442821/android.svg />
+
+<img src=https://build.phonegap.com/apps/3359384/badge/3564442821/winphone.svg />
+
 
 * No más picaduras de mosquitos.
 
