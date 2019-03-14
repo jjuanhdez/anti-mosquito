@@ -10,3 +10,4 @@
     La app no garantiza el 100% de eficacia porque hay muchas especies diferentes.
     Encienda los altavoces a volumen alto para abarcar un área mayor.
     Es sólo una broma en su Smartphone.
+ 
