@@ -1,0 +1,41 @@
+
+
+{
+   "name": "Anti-mosquito",
+   "short_name": "Anti-mosquito",
+   "description": "************* No más picaduras de mosquitos *************\n La aplicación emite un sonido de alta frecuencia (ultrasonido) que la mayoráa de mosquitos encuentran de mal gusto y le puede ayudar a prevenir sus picaduras.\n Esta aplicación es una de las formas de combatir los mosquitos. Efectivamente, complementa los métodos tradicionales de spray o aleteo de manos, para evitar las picaduras.\n Seleccione una frecuencia más alta para un mejor rendimiento y ajuste el volumen a alto. Por favor, no conecte los auriculares al utilizar esta aplicación.\n El mosquito hembra trae comida para sus huevos en desarrollo mediante la inserción de su probíscide en un mamífero o reptil y la extracción de su sangre. Sólo las hembras de los mosquitos pican a los humanos y animales.\n\n ** Nota:\n - Esto es sólo una broma en su smartphone.\n - La aplicación no garantiza el 100% de eficacia en repeler los mosquitos porque hay muchas especies diferentes. Es simplemente una medida adicional contra los mosquitos. Recomendamos que use mosquiteras durante el sueño y cremas anti-mosquitos cuando esté en exteriores.\n - Puede personalizar la frecuencia de acuerdo a sus deseos, pero si la frecuencia es demasiado baja, puede resultar incómoda para sus oídos.\n - Se recomiendan las frecuencias de 20 kHz - 22 kHz, el oído humano no las escucha, y son eficaces contra los mosquitos.\n - Y no olvide encender los altavoces a volumen Alto para abarcar un área mayor.",
+   "version": "1.0.1",
+   "launch_path": "/index.html",
+   "fullscreen": "true",
+   "chrome": {
+      "navigation": false
+   },
+   "icons": {
+      "16": "/img/icons/icon-16x16.png",
+      "32": "/img/icons/icon-32x32.png",
+      "48": "/img/icons/icon-48x48.png",
+      "60": "/img/icons/icon-60x60.png",
+      "128": "/img/icons/icon-128x128.png",
+      "150": "/img/icons/mstile-150x150.png",
+      "192": "/img/icons/icon-192x192.png",
+      "256": "/img/icons/icon-256x256.png",
+      "512": "/img/icons/icon-512x512.png"
+   },
+   "theme_color": "#FFFFFF",
+   "background_color": "#FFFFFF",
+   "display": "standalone",
+   "developer": {
+      "name": "J. Juan Hernández",
+      "url": "http://aquiesta.org/"
+   },
+   "installs_allowed_from": [
+      "*"
+   ],
+   "default_locale": "es",
+   "permissions": {
+      "audio-channel-content": {
+         "description": "play audio in background"
+      }
+   },
+   "orientation": "portrait-primary"
+}
