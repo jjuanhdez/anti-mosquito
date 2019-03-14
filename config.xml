@@ -1,24 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-	<widget xmlns = "http://www.w3.org/ns/widgets"
-		xmlns:gap = "http://phonegap.com/ns/1.0"
-		xmlns:android = "http://schemas.android.com/apk/res/android"
-		id        = "com.github.jjuanhdez.anti-mosquito"
-		versionCode=""
-		version   = "1.0.1">
-	<name>Anti-mosquito</name>
-	<description>************* No más picaduras de mosquitos ************* 
-La aplicación emite un sonido de alta frecuencia (ultrasonido) que la mayoráa de mosquitos encuentran de mal gusto y le puede ayudar a prevenir sus picaduras.
-Esta aplicación es una de las formas de combatir los mosquitos. Efectivamente, complementa los métodos tradicionales de spray o aleteo de manos, para evitar las picaduras.
-Seleccione una frecuencia más alta para un mejor rendimiento y ajuste el volumen a alto. Por favor, no conecte los auriculares al utilizar esta aplicación.
-El mosquito hembra trae comida para sus huevos en desarrollo mediante la inserción de su probíscide en un mamífero o reptil y la extracción de su sangre. Sólo las hembras de los mosquitos pican a los humanos y animales.
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+	id          = "com.github.jjuanhdez.cronometro"
+	versionCode = "1"
+	version     = "1.1.0" >
 
-** Nota:
- - Esto es sólo una broma en su smartphone.
- - La aplicación no garantiza el 100% de eficacia en repeler los mosquitos porque hay muchas especies diferentes. Es simplemente una medida adicional contra los mosquitos. Recomendamos que use mosquiteras durante el sueño y cremas anti-mosquitos cuando esté en exteriores.
- - Puede personalizar la frecuencia de acuerdo a sus deseos, pero si la frecuencia es demasiado baja, puede resultar incómoda para sus oídos.
- - Se recomiendan las frecuencias de 20 kHz - 22 kHz, el oído humano no las escucha, y son eficaces contra los mosquitos.
- - Y no olvide encender los altavoces a volumen Alto para abarcar un área mayor.</description>
-	<author href="https://aquiesta.org" email="jjuanhdez@gmail.com">J. Juan Hernández</author>
+<!-- versionCode is optional and Android only -->
+	<icon src="icon.png" />
+
+	<name>Cronómetro</name>
+
+	<description>
+      Aplicación de un sencillo pero potente cronómetro.
+- Detiene el tiempo en milisegundos.
+- Completamente libre de publicidad.
+- Además, se puede utilizar como un juego para parar en tan sólo 10 segundos.
+	</description>
+
+	<author email="jjuanhdez@gmail.com" href="https://aquiesta.org">
+      J. Juan Hernández
+	</author>
+	
 	<content src="index.html" />
 	
 <!-- Customize your app and platform with the preference element. -->
@@ -26,7 +28,6 @@ El mosquito hembra trae comida para sus huevos en desarrollo mediante la inserci
 	<preference name="phonegap-version" value="cli-6.5.0" />
 	<preference name="orientation" value="portrait" /> <!-- default, landscape, or portrait. -->
 	<preference name="fullscreen" value="true" />
-	<preference name="ErrorUrl" value="404r.html" />
 	
 	<!-- iOS only -->
 	<preference name="target-device" value="universal" /> <!-- handset, tablet, or universal. -->
@@ -46,15 +47,5 @@ El mosquito hembra trae comida para sus huevos en desarrollo mediante la inserci
 	<!-- Windows only -->
 	<preference name="windows-arch" value="anycpu" /> <!-- anycpu, arm, x86, and x64. -->
 	<preference name="windows-appx-target" value="uap" /> <!-- uap (Windows 10 Mobile / Universal), 8.1-phone, 8.1-win -->
-
-	<platform name="ios">
-	<icon src="file://D:\www\Anti-mosquito\img\icons\icon-60x60.png" width="60" height="60" />
-	</platform>
-	<platform name="android">
-	</platform>
-	<platform name="winphone">
-	</platform>
-	 <icon src="icon.png" />
-
+	
 </widget>
-
