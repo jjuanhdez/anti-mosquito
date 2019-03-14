@@ -6,7 +6,7 @@
 	version     = "1.0.1" >
 
 <!-- versionCode is optional and Android only -->
-	<icon src="img\icons\icon-256x256.png" />
+	<icon src="favicon.ico" />
 
 	<name>Anti-mosquito</name>
 
