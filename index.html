@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<meta charset="UTF-8">
+	<meta name="description" content="Anti-mosquito">
+	<meta name="keywords" content="anti-mosquito">
+	<meta name="author" content="J.Juan Hernández">
+	<meta name="dcterms.created" content="(C) 2020">
+	
 	<link rel="manifest" href="manifest.json">
-
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style_menu.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	  
-	<script src="js/zepto.min-1.2.0.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/script.js"></script>
 
 	<title>Anti-mosquito</title>
 </head>
 <body>
-	<script	>document.write('');</script>
-	<noscript><p class="error"><img src="img/alert.png" alt="Alerta"><b>Â¡ERROR!</b>Â¡JavaScript debe estar habilitado!</p></noscript>
-	
-	<header class="cabecera"><h2>Anti-mosquito</h2></header>			
-
-	<!-- MENÚ -->
-	<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-	<label for="openSidebarMenu" class="sidebarIconToggle">
-		<div class="spinner diagonal part-1"></div>
-		<div class="spinner horizontal"></div>
-		<div class="spinner diagonal part-2"></div>
-	</label>
-	<div id="sidebarMenu">  
-	<ul class="sidebarMenuInner">
-		<li><a href="index.html">Inicio</a></li>
-		<li><a href="https://github.com/jjuanhdez/anti-mosquito" target="_blank">GitHub</a></li>
-		<li><a href="http://www.aquiesta.org/webapp/" target="_blank">Más aplicaciones</a></li>
-		<li><a href="acercade.html">Acerca de</a></li>
-	</ul>
+	<script>document.write('');</script>
+	<noscript>
+		<p class="error"><img src="img/alert.png" alt="ALERTA"><b>Â¡ERROR!</b>Â¡JavaScript debe estar habilitado!</p>
+	</noscript>
+	<div class="cabecera">
+		<h1>Anti-mosquito</h1>
+		<!--<img class="logo" src="img/dot.png" alt="Logo">
+		<h2>Anti-mosquito</h2>
+		<img class="close" src="img/close.png" onclick="cerrar()" alt="Cerrar" width="40" height="40">-->
 	</div>
-
-	<!-- APLICACIÓN -->
-	<br><div class="mosquito">
-		<img src="img/mosquito.png" onclick="mosquito_image_action()" alt="mosquito zumb&oacute;n">
-	</div>
+	<div class="mosquito">
+		<img src="img/mosquito.png" onclick="mosquito_image_action()" alt="mosquito zumbón">
+<!--		<div class="rate-and-share-container">
+			<a href="http://marketplace.firefox.com/app/antimosquito" target="_blank" class="rate-button">
+				<span class="star"><img src="img/star.png" alt=""></span>
+				<span class="rate-text">¡califícame!</span></a>
+			&nbsp;&nbsp;
+			<a href="http://www.aquiesta.org/" target="_blank" class="rate-button">
+				<span class="star"><img src="img/star.png" alt=""></span>
+				<span class="rate-text">¡Más apps!</span>
+			</a>
+		</div>
+-->	</div>
 	
-	<footer class="button">
+	<div class="button">
 		<div class="buttonitem button_1" onclick="button_action(1)">16 kHz</div>
 		<div class="buttonitem button_2" onclick="button_action(2)">18 kHz</div>
 		<div class="buttonitem button_3" onclick="button_action(3)">20 kHz</div>
 		<div class="buttonitem button_4" onclick="button_action(4)">21 kHz</div>
 		<div class="buttonitem button_5" onclick="button_action(5)">22 kHz</div>
-	</footer>	
+	</div>
+	
 </body>
 </html>
